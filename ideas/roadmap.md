@@ -1,0 +1,38 @@
+Étapes nécéssaires pour arriver à une version jouable :
+- Décider de l'organisation du projet
+    - [X] Créer un venv 
+    - [ ] Utiliser git
+    - [X] Créer la structure de base : séparer les scripts des assets, créer plusieurs files avec chacune leur propre rôle...
+    - [X] Ajouter les classes qui serviront à gérer les différentes parties du projet 
+    - [X] Trouver un moyen de relier ces différentes parties et de les faire interagir -> classe Game
+- Créer un menu
+    - [X] Permettre de tester le projet : affichage d'une fenêtre, interactions basiques 
+    - [X] Créer un début de menu, toujours en tenant compte de ce qu'il faudra ajouter par la suite
+    - [OUI] Faire de grosses erreurs sur l'organisation et se rendre compte après plusieurs jours de travail qu'il faut tout recommencer depuis le début, AU MOINS 3 FOIS (évidemment, non, il ne faut pas faire ça, mais je l'ai fait...)
+    - [X] Créer de nouvelles sous-classes pour améliorer le menu (UI (principale) -> Buttons, ButtonHandler, PageHandler (nouvelles sous-classes))
+    - [X] Essayer de styliser un peu avec ses faibles compétences en front-end (en utilsant des assets open-source de personnes douées)
+    - [X] Faire plusieurs pages de menu : home, settings, création de partie, gestion de sauvegardes...
+- Créer les bases du jeu
+    - [X] Créer une nouvelle "page" qui sera le jeu
+    - [X] Essayer de comprendre comment marche un système de grille hexagonale et l'implémenter (merci beaucoup à https://www.redblobgames.com/grids/hexagons/)
+    - [X] Afficher une map avec des tiles haxagonales
+    - [X] Pouvoir déplacer la caméra
+    - [X] Créer un système de génération de map
+    - [X] Créer un système de sauvegarde pour conserver les maps générées. Il sera important d'y ajouter de nombreux éléments futurs selon l'état de la partie.
+    - [X] Créer une UI de base, qu'on complétera en cours de route
+    - [X] Créer une pause avec une liste de commandes
+- Imaginer comment sera le jeu
+    - [X] Maintenant qu'on a les bases, on peut essayer d'imaginer comment sera le gameplay
+    - [X] Essayer de créer une liste de ressources, de ressources stratégiques, de leur répartition selon le biome (plaine, fôret, montagne...), une liste d'unités, de bâtiments, de comment marchera la production d'une ville et donc d'unités et de bâtiments, des coûts de ces actions... Bref, de quoi avoir un jeu pas trop mal équilibré mais pas parfaitement équilibré non plus. Ce sera toujours plus facile à changer par la suite que la structure du projet.
+- Faire le jeu
+    - [X] Essayer d'implémenter de quoi commencer une partie : un colon qui peut créer une ville, et la possibilité de passer des tours.
+    - [ ] Ajouter les éléments de gameplay : la création d'unités et de bâtiments, la création de nouvelles villes, les combats avec les autres joueurs
+    - [ ] Ajouter la possibilité de gagner et de perdre
+    - [ ] Essayer de créer une IA basique pour les joueurs adverses.
+- Peaufiner le projet
+    - [ ] Revoir si la structure est toujours correcte.
+    - [ ] Optimiser.
+    - [ ] Enlever tous les bugs trouvables.
+    - [ ] Peut-être implémenter de nouvelles idées qui nous sont venues en cours de route : arbre technologique, factions avec différents bonus, amélioration de la génération de map, amélioration de l'IA...
+    - [ ] Faire tester le jeu à d'autres personnes, juste pour voir s'il tient la route, au moins un peu.
+    - [ ] Essayer de se rappeler tout ce qu'on a fait, tout ce qu'on a appris. Le but de ce projet était éducatif, et il serait dommage d'oublier comment on l'a réaliser. (évidemment, il était facile de le deviner, mais j'ai oublié 90% de ce que j'avais fait pour ce projet... j'essaie actuellement de me rappeler, mais je pense que j'oublie beaucoup, d'où le petit nombre d'étapes et le fait qu'elles sont probablement dans le mauvais ordre...)
