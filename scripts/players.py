@@ -1,7 +1,7 @@
 from random import randint
 import pygame
-from BestGameOfTheYear.scripts.units import *
-from BestGameOfTheYear.scripts.constants import *
+from units import *
+from constants import *
 
 class Player:
     def __init__(self, game, id):

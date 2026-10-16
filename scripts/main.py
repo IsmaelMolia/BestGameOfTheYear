@@ -1,5 +1,5 @@
 import pygame
-from BestGameOfTheYear.scripts.game import Game
+from game import Game
 
 def main():
     pygame.init()

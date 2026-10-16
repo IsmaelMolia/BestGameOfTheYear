@@ -1,6 +1,6 @@
 import pygame
 from random import randint
-from BestGameOfTheYear.scripts.constants import *
+from constants import *
 
 class Unit:
     def __init__(self, game, tile_linked, owner):

@@ -1,8 +1,8 @@
 import pygame
-from BestGameOfTheYear.scripts.constants import *
-from BestGameOfTheYear.scripts.ui import *
-from BestGameOfTheYear.scripts.map import *
-from BestGameOfTheYear.scripts.saves_handler import *
+from constants import *
+from ui import UI_Handler
+from map import Map
+from saves_handler import Saves_Handler
 
 class Game:
     def __init__(self):
@@ -16,7 +16,7 @@ class Game:
         self.clock = pygame.time.Clock()
         self.delta = 0 # pour l instant inutile
 
-        self.ui = UI(self)
+        self.ui = UI_Handler(self)
         self.map = Map(self)
         self.saves_handler = Saves_Handler(self)
 

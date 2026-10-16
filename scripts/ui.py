@@ -1,6 +1,18 @@
 import pygame
-from BestGameOfTheYear.scripts.constants import *
+from constants import *
 from random import randint
+
+class UI_Handler:
+    def __init__(self, game):
+        self.game = game
+        self.button_handler = ButtonHandler(self.game, self)
+        self.page_handler = PageHanlder(self.game, self)
+        self.page_handler.reload_page()
+
+    def show(self):
+        self.page_handler.show_page()
+        self.button_handler.show_buttons()
+        self.page_handler.show_icons()
 
 class Button:
     def __init__(self, button_handler, name, text, column, line, background_color, text_color, initial_size=1, zoom=BUTTON_ZOOM, roundness=BUTTON_ROUNDNESS, hoverable=True, clickable=True, inputable=False, special_value=None):
@@ -124,7 +136,7 @@ class Button:
         self.screen.blit(self.render, self.position_text)
 
 class ButtonHandler:
-    def __init__(self, game, ui:UI):
+    def __init__(self, game, ui:UI_Handler):
         self.game = game
         self.ui = ui
 
@@ -1144,7 +1156,7 @@ class ButtonHandler:
         self.show_side_buttons()
 
 class PageHanlder:
-    def __init__(self, game, ui:UI):
+    def __init__(self, game, ui:UI_Handler):
         self.game = game
         self.ui = ui
 
@@ -1390,15 +1402,3 @@ class PageHanlder:
         self.load_background()
         self.show_map()
         self.show_side_pages()
-
-class UI:
-    def __init__(self, game):
-        self.game = game
-        self.button_handler = ButtonHandler(self.game, self)
-        self.page_handler = PageHanlder(self.game, self)
-        self.page_handler.reload_page()
-
-    def show(self):
-        self.page_handler.show_page()
-        self.button_handler.show_buttons()
-        self.page_handler.show_icons()

@@ -1,9 +1,9 @@
 import pygame
 import math
 from random import randint
-from BestGameOfTheYear.scripts.constants import *
+from constants import *
 #from units import *
-from BestGameOfTheYear.scripts.players import *
+from players import *
 
 class Tile:
     def __init__(self, game, coo, center, inner_radius, outer_radius, type="plain", strategic_ressources=[], owner=None, building=None, unit=None):

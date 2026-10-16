@@ -2,7 +2,7 @@ import pygame
 import json
 import os
 import pathlib
-from BestGameOfTheYear.scripts.constants import *
+from constants import *
 
 class Saves_Handler:
     def __init__(self, game):

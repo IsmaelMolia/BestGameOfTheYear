@@ -1,7 +1,7 @@
 import math
 
 # assets
-ASSETS_PATH = "BestGameOfTheYear/assets"
+ASSETS_PATH = "assets"
 #CURSOR_FILEPATH = f"{ASSETS_PATH}/cursors/without_outline"
 CURSOR_FILEPATH = f"{ASSETS_PATH}/cursors"
 CURSORS_FILEPATHS = {"default":f"{CURSOR_FILEPATH}/pointer_scifi_b.png", "build":f"{CURSOR_FILEPATH}/tool_hammer.png", "city":f"{CURSOR_FILEPATH}/cursor_cogs.png", "unit":f"{CURSOR_FILEPATH}/target_round_a.png", "building":f"{CURSOR_FILEPATH}/tool_wrench.png", "build":f"{CURSOR_FILEPATH}/tool_hammer.png", "moving":f"{CURSOR_FILEPATH}/steps.png"}
